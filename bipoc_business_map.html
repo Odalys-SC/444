@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73786f3c57ef2e9be203cfc753c1dc37 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73786f3c57ef2e9be203cfc753c1dc37" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73786f3c57ef2e9be203cfc753c1dc37 = L.map(
+                "map_73786f3c57ef2e9be203cfc753c1dc37",
+                {
+                    center: [47.6606905, -117.4225863],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e4d4d11aebc2446d71e1d178fa1559e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e4d4d11aebc2446d71e1d178fa1559e.addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+            var marker_0ba11e26ec7026279cba883cc7614296 = L.marker(
+                [47.6683691, -117.4029699],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_48ebcaba39eed4e7e8621872dc67f471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a40895946a99e0169152104a27193dfd = $(`<div id="html_a40895946a99e0169152104a27193dfd" style="width: 100.0%; height: 100.0%;"><strong>Gonzaga Univeristy (Map Center)</strong><br>Address: 502 E Boone Ave, Spokane, WA 99258<br></div>`)[0];
+                popup_48ebcaba39eed4e7e8621872dc67f471.setContent(html_a40895946a99e0169152104a27193dfd);
+            
+        
+
+        marker_0ba11e26ec7026279cba883cc7614296.bindPopup(popup_48ebcaba39eed4e7e8621872dc67f471)
+        ;
+
+        
+    
+    
+            var marker_17a98a1152f69af0e44be25b78d33a2e = L.marker(
+                [47.6580746, -117.4233883],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_55ffa7bfabaca523193cee4c09ec4da2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47095148057f6f6115abd91f19a0dc96 = $(`<div id="html_47095148057f6f6115abd91f19a0dc96" style="width: 100.0%; height: 100.0%;"><strong>Bistango Martini Lounge</strong><br>Address: 108 N Post St Spokane, WA 99201<br>Phone: (509) 624-8464<br>Category: Dining<br><a href="https://www.bistangolounge.com/" target="_blank">Website</a></div>`)[0];
+                popup_55ffa7bfabaca523193cee4c09ec4da2.setContent(html_47095148057f6f6115abd91f19a0dc96);
+            
+        
+
+        marker_17a98a1152f69af0e44be25b78d33a2e.bindPopup(popup_55ffa7bfabaca523193cee4c09ec4da2)
+        ;
+
+        
+    
+    
+            var marker_9050938024f521e4f1ab58ab13807149 = L.marker(
+                [47.6598416, -117.4152386],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_85e0785880194c052f8038bb6a3ce0ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35256a451d610c414b5f2d59229ecd40 = $(`<div id="html_35256a451d610c414b5f2d59229ecd40" style="width: 100.0%; height: 100.0%;"><strong>Boiada Brazilian Grill</strong><br>Address: 245 W Spokane Falls Blvd Spokane, WA 99201<br>Phone: (509) 820-3199<br>Category: Dining<br><a href="https://boiadabraziliangrill.com/" target="_blank">Website</a></div>`)[0];
+                popup_85e0785880194c052f8038bb6a3ce0ff.setContent(html_35256a451d610c414b5f2d59229ecd40);
+            
+        
+
+        marker_9050938024f521e4f1ab58ab13807149.bindPopup(popup_85e0785880194c052f8038bb6a3ce0ff)
+        ;
+
+        
+    
+    
+            var marker_86c32a0ee61fb16cc0790b2f53bda3d7 = L.marker(
+                [47.4955244, -117.5865545],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_fa64ceded7175f5f1dbf33992f210d19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf141569430a92d98e7a50cb7dd0ec51 = $(`<div id="html_bf141569430a92d98e7a50cb7dd0ec51" style="width: 100.0%; height: 100.0%;"><strong>Brain and Body Therapy</strong><br>Address: 126 N Washington St. Spokane, WA 99201<br>Phone: (509) 879-7363<br>Category: Professional Services<br><a href="https://brainandbodytherapy.com/" target="_blank">Website</a></div>`)[0];
+                popup_fa64ceded7175f5f1dbf33992f210d19.setContent(html_bf141569430a92d98e7a50cb7dd0ec51);
+            
+        
+
+        marker_86c32a0ee61fb16cc0790b2f53bda3d7.bindPopup(popup_fa64ceded7175f5f1dbf33992f210d19)
+        ;
+
+        
+    
+    
+            var marker_105ba1019d8e5463d6e006a98d4043d8 = L.marker(
+                [47.6573551, -117.4187607],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_5b3dd42479544d1ccfa70890c8321355 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27f6344c27e024cb819b2bc81f75ef58 = $(`<div id="html_27f6344c27e024cb819b2bc81f75ef58" style="width: 100.0%; height: 100.0%;"><strong>Chicken-N-Mo: Southern Style Cookin'</strong><br>Address: 414 1/2 W Sprague Ave Spokane, WA 99201<br>Phone: (509) 838-5071<br>Category: Dining<br><a href="http://chicken-n-more.com/" target="_blank">Website</a></div>`)[0];
+                popup_5b3dd42479544d1ccfa70890c8321355.setContent(html_27f6344c27e024cb819b2bc81f75ef58);
+            
+        
+
+        marker_105ba1019d8e5463d6e006a98d4043d8.bindPopup(popup_5b3dd42479544d1ccfa70890c8321355)
+        ;
+
+        
+    
+    
+            var marker_7fc3ff5a9ceb5b834c531652ab44b5db = L.marker(
+                [47.6564525, -117.4284551],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_f1e397012e6b95bb94aa249d6b494204 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_615f9353a535630791b87f7225371a8a = $(`<div id="html_615f9353a535630791b87f7225371a8a" style="width: 100.0%; height: 100.0%;"><strong>CT3 Insurance Agency</strong><br>Address: 1119 W 1st Ave Suite E Spokane, WA 99201<br>Phone: (509) 723-6782<br>Category: Professional Services<br><a href="https://www.facebook.com/insurancespokane" target="_blank">Website</a></div>`)[0];
+                popup_f1e397012e6b95bb94aa249d6b494204.setContent(html_615f9353a535630791b87f7225371a8a);
+            
+        
+
+        marker_7fc3ff5a9ceb5b834c531652ab44b5db.bindPopup(popup_f1e397012e6b95bb94aa249d6b494204)
+        ;
+
+        
+    
+    
+            var marker_07d72ebfa894253abfed73773cc3dc15 = L.marker(
+                [47.6571973, -117.4225788],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_d390aa210bc9e6c36f64cea8332f58e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_448289e2f5628e970b522fa224d643c5 = $(`<div id="html_448289e2f5628e970b522fa224d643c5" style="width: 100.0%; height: 100.0%;"><strong>Downtown Grocery III</strong><br>Address: 501 W. Sprague Ave. Spokane, WA 99201<br>Category: Retail<br></div>`)[0];
+                popup_d390aa210bc9e6c36f64cea8332f58e1.setContent(html_448289e2f5628e970b522fa224d643c5);
+            
+        
+
+        marker_07d72ebfa894253abfed73773cc3dc15.bindPopup(popup_d390aa210bc9e6c36f64cea8332f58e1)
+        ;
+
+        
+    
+    
+            var marker_8027f59dac0d65c00ff77e044ab1fb63 = L.marker(
+                [47.6593642, -117.42384],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_a1ca5fde4968bdd601672b355453101f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4161696bd35668ce0aa24aed7ffa19f7 = $(`<div id="html_4161696bd35668ce0aa24aed7ffa19f7" style="width: 100.0%; height: 100.0%;"><strong>Francesca's Collections, Inc</strong><br>Address: 808 W Main Ave Spokane, WA 99201<br>Phone: (509) 624-1599<br>Category: Retail<br><a href="https://www.francescas.com/store-locator/river-park-square.do" target="_blank">Website</a></div>`)[0];
+                popup_a1ca5fde4968bdd601672b355453101f.setContent(html_4161696bd35668ce0aa24aed7ffa19f7);
+            
+        
+
+        marker_8027f59dac0d65c00ff77e044ab1fb63.bindPopup(popup_a1ca5fde4968bdd601672b355453101f)
+        ;
+
+        
+    
+    
+            var marker_16a092853c38dd9e767225b2532f0905 = L.marker(
+                [47.6593642, -117.42384],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_fae6c3d790377e376090443ddf1415fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b5d808517c192ca5c758fa79ac3d164 = $(`<div id="html_3b5d808517c192ca5c758fa79ac3d164" style="width: 100.0%; height: 100.0%;"><strong>From Here</strong><br>Address: 808 W Main Ave Spokane, WA 99201<br>Phone: (509) 850-0050<br>Category: Retail<br><a href="https://www.terrainspokane.com/fromhere" target="_blank">Website</a></div>`)[0];
+                popup_fae6c3d790377e376090443ddf1415fb.setContent(html_3b5d808517c192ca5c758fa79ac3d164);
+            
+        
+
+        marker_16a092853c38dd9e767225b2532f0905.bindPopup(popup_fae6c3d790377e376090443ddf1415fb)
+        ;
+
+        
+    
+    
+            var marker_2b0444ccc6c2f9349cd19f222b7c1ef3 = L.marker(
+                [47.6582557, -117.4205175],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_79c7997b5aa534e3409db278dfe0f771 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c4bbb3ebc487ab4d56a135ae77e94c0 = $(`<div id="html_7c4bbb3ebc487ab4d56a135ae77e94c0" style="width: 100.0%; height: 100.0%;"><strong>Indaba Coffee Roasters</strong><br>Address: 518 W Riverside Ave Spokane, WA 99201<br>Phone: (509) 822-7182<br>Category: Dining<br><a href="http://www.indabacoffee.com/" target="_blank">Website</a></div>`)[0];
+                popup_79c7997b5aa534e3409db278dfe0f771.setContent(html_7c4bbb3ebc487ab4d56a135ae77e94c0);
+            
+        
+
+        marker_2b0444ccc6c2f9349cd19f222b7c1ef3.bindPopup(popup_79c7997b5aa534e3409db278dfe0f771)
+        ;
+
+        
+    
+    
+            var marker_662bb71591ca56c5c4408c6d21675eb7 = L.marker(
+                [47.6593642, -117.42384],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_5ef9765736cbd684e3d417aef21fc44e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10e0ed5589a5875e3c1ac6990eb61c72 = $(`<div id="html_10e0ed5589a5875e3c1ac6990eb61c72" style="width: 100.0%; height: 100.0%;"><strong>Indigenous Eats</strong><br>Address: 808 W Main Ave Spokane, WA 99201<br>Phone: (509) 850-9292<br>Category: Dining<br><a href="https://www.iespokane.com/" target="_blank">Website</a></div>`)[0];
+                popup_5ef9765736cbd684e3d417aef21fc44e.setContent(html_10e0ed5589a5875e3c1ac6990eb61c72);
+            
+        
+
+        marker_662bb71591ca56c5c4408c6d21675eb7.bindPopup(popup_5ef9765736cbd684e3d417aef21fc44e)
+        ;
+
+        
+    
+    
+            var marker_152a275559234a3246ff5ab9280df876 = L.marker(
+                [47.6566644, -117.4199819],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_55b3d1d8fa7d59ce43a7b2d8b21f3a44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8804cbf425d8a51c70a2bac1a5c33f8 = $(`<div id="html_a8804cbf425d8a51c70a2bac1a5c33f8" style="width: 100.0%; height: 100.0%;"><strong>Kindnss</strong><br>Address: 522 W 1st Ave Spokane, WA 99201<br>Phone: (509) 496-1708<br>Category: Professional Services<br><a href="http://kindnss.com/" target="_blank">Website</a></div>`)[0];
+                popup_55b3d1d8fa7d59ce43a7b2d8b21f3a44.setContent(html_a8804cbf425d8a51c70a2bac1a5c33f8);
+            
+        
+
+        marker_152a275559234a3246ff5ab9280df876.bindPopup(popup_55b3d1d8fa7d59ce43a7b2d8b21f3a44)
+        ;
+
+        
+    
+    
+            var marker_3d6279ee43a9f4c4aa285807e79d3f49 = L.marker(
+                [47.4955244, -117.5865545],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_b4c605d08c15dcd38b4d4f50ff96d086 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_360d2b58d77377ae599c6dadc24c10a8 = $(`<div id="html_360d2b58d77377ae599c6dadc24c10a8" style="width: 100.0%; height: 100.0%;"><strong>Makiels Lobster Rolls</strong><br>Address: 115 N. Washington St. Spokane, WA 99201<br>Category: Dining<br><a href="https://www.instagram.com/makielslobsterrolls/" target="_blank">Website</a></div>`)[0];
+                popup_b4c605d08c15dcd38b4d4f50ff96d086.setContent(html_360d2b58d77377ae599c6dadc24c10a8);
+            
+        
+
+        marker_3d6279ee43a9f4c4aa285807e79d3f49.bindPopup(popup_b4c605d08c15dcd38b4d4f50ff96d086)
+        ;
+
+        
+    
+    
+            var marker_44cfa687ecf1267827e43d047b89fc80 = L.marker(
+                [47.6588707, -117.4223057],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_fde84b7cbf6c29bad56adb663aa6ce7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b3f4fda549b390b535079e4623d2adb = $(`<div id="html_6b3f4fda549b390b535079e4623d2adb" style="width: 100.0%; height: 100.0%;"><strong>Malsam Tsang Structural Engineering</strong><br>Address: 707 W Main Ave #B9 Spokane, WA 99201<br>Phone: (509) 389-4922<br>Category: Professional Services<br><a href="https://www.malsam-tsang.com/" target="_blank">Website</a></div>`)[0];
+                popup_fde84b7cbf6c29bad56adb663aa6ce7d.setContent(html_6b3f4fda549b390b535079e4623d2adb);
+            
+        
+
+        marker_44cfa687ecf1267827e43d047b89fc80.bindPopup(popup_fde84b7cbf6c29bad56adb663aa6ce7d)
+        ;
+
+        
+    
+    
+            var marker_3de207cccba508fe0b4a98823dedfce7 = L.marker(
+                [47.6643075, -117.4255123],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_56794b78b5459b19e045378f85bbcf8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7ab67cf19132f36db9939b89d1c5feb = $(`<div id="html_c7ab67cf19132f36db9939b89d1c5feb" style="width: 100.0%; height: 100.0%;"><strong>Native Gaming</strong><br>Address: 921 W Broadway Ave Spokane, WA 99201<br>Category: Professional Services<br><a href="https://t.co/k3KIpui9AQ" target="_blank">Website</a></div>`)[0];
+                popup_56794b78b5459b19e045378f85bbcf8d.setContent(html_c7ab67cf19132f36db9939b89d1c5feb);
+            
+        
+
+        marker_3de207cccba508fe0b4a98823dedfce7.bindPopup(popup_56794b78b5459b19e045378f85bbcf8d)
+        ;
+
+        
+    
+    
+            var marker_467db71b7d71df6052fda0fcff6e40e7 = L.marker(
+                [47.6572725, -117.4238965],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_328c0e3894b3ae47114bc0698e8fbc55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_201a572566a28f38dcebaf2537dab7c9 = $(`<div id="html_201a572566a28f38dcebaf2537dab7c9" style="width: 100.0%; height: 100.0%;"><strong>NUDO Ramen House</strong><br>Address: 818 W Sprague Ave Mystery Bldg Spokane, WA 99201<br>Phone: (509) 290-5763<br>Category: Dining<br><a href="http://www.nudoramen.com/" target="_blank">Website</a></div>`)[0];
+                popup_328c0e3894b3ae47114bc0698e8fbc55.setContent(html_201a572566a28f38dcebaf2537dab7c9);
+            
+        
+
+        marker_467db71b7d71df6052fda0fcff6e40e7.bindPopup(popup_328c0e3894b3ae47114bc0698e8fbc55)
+        ;
+
+        
+    
+    
+            var marker_ed13fccb72c6ef8b00dc42da4e287f77 = L.marker(
+                [47.6652969, -117.4273533],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_1fd02f9bca3e759f4a0514972697d750 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c3f9ec7e4802133ed71bd4189a71e92 = $(`<div id="html_3c3f9ec7e4802133ed71bd4189a71e92" style="width: 100.0%; height: 100.0%;"><strong>Queen of Sheba</strong><br>Address: 621 W Mallon Ave #426 Flour Mill Spokane, WA 99201<br>Phone: (509) 328-3958<br>Category: Dining<br></div>`)[0];
+                popup_1fd02f9bca3e759f4a0514972697d750.setContent(html_3c3f9ec7e4802133ed71bd4189a71e92);
+            
+        
+
+        marker_ed13fccb72c6ef8b00dc42da4e287f77.bindPopup(popup_1fd02f9bca3e759f4a0514972697d750)
+        ;
+
+        
+    
+    
+            var marker_d2ff90541fcb4816c15681e47974935c = L.marker(
+                [47.6580525, -117.4139733],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_64c69d2118b4eb19e391370479637725 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db4349dafc205f3af54e55f3f5440923 = $(`<div id="html_db4349dafc205f3af54e55f3f5440923" style="width: 100.0%; height: 100.0%;"><strong>Sirinya's Thai Restaurant</strong><br>Address: 230 W Riverside Ave. Spokane, WA 99201<br>Phone: (509) 315-5055<br>Category: Dining<br><a href="https://sirinyasthairestaurantandloung.com/" target="_blank">Website</a></div>`)[0];
+                popup_64c69d2118b4eb19e391370479637725.setContent(html_db4349dafc205f3af54e55f3f5440923);
+            
+        
+
+        marker_d2ff90541fcb4816c15681e47974935c.bindPopup(popup_64c69d2118b4eb19e391370479637725)
+        ;
+
+        
+    
+    
+            var marker_0a86296ba4c188be1d3fa26257b3aba0 = L.marker(
+                [47.6564614, -117.4267899],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_939d3fa9a334cba2d223d139d04530e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d5ad0f92c2ab934af3f6dca163f3cbe = $(`<div id="html_8d5ad0f92c2ab934af3f6dca163f3cbe" style="width: 100.0%; height: 100.0%;"><strong>Skewers</strong><br>Address: 1007 W. 1st Ave. Spokane, WA 99201<br>Phone: (509) 456-5656<br>Category: Dining<br><a href="https://skewerstruck.com/" target="_blank">Website</a></div>`)[0];
+                popup_939d3fa9a334cba2d223d139d04530e9.setContent(html_8d5ad0f92c2ab934af3f6dca163f3cbe);
+            
+        
+
+        marker_0a86296ba4c188be1d3fa26257b3aba0.bindPopup(popup_939d3fa9a334cba2d223d139d04530e9)
+        ;
+
+        
+    
+    
+            var marker_50eaf80f5653ebfa06b367f38c63b4da = L.marker(
+                [47.6571973, -117.4225788],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_78b53ac015f680dc02b64914ca663733 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0be86859e8b78b6995b4001eac5f00d9 = $(`<div id="html_0be86859e8b78b6995b4001eac5f00d9" style="width: 100.0%; height: 100.0%;"><strong>Spero Law Firm</strong><br>Address: 316 W. Sprague Ave. Suite 316 Spokane, WA 99201<br>Phone: (509) 443-3953<br>Category: Professional Services<br><a href="https://www.sperolawfirm.com/" target="_blank">Website</a></div>`)[0];
+                popup_78b53ac015f680dc02b64914ca663733.setContent(html_0be86859e8b78b6995b4001eac5f00d9);
+            
+        
+
+        marker_50eaf80f5653ebfa06b367f38c63b4da.bindPopup(popup_78b53ac015f680dc02b64914ca663733)
+        ;
+
+        
+    
+    
+            var marker_48e03291070d8be6bddfc115ef90c07c = L.marker(
+                [47.6613184, -117.4265976],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_ae5c8b10d48fff1600a7f76f0d7023ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a42e6fb4d869c8657f3ce332c1eb3f7 = $(`<div id="html_9a42e6fb4d869c8657f3ce332c1eb3f7" style="width: 100.0%; height: 100.0%;"><strong>Terrain Gallery</strong><br>Address: 628 N Monroe St Spokane, WA 99201<br>Category: Entertainment<br><a href="https://www.terrainspokane.com/" target="_blank">Website</a></div>`)[0];
+                popup_ae5c8b10d48fff1600a7f76f0d7023ed.setContent(html_9a42e6fb4d869c8657f3ce332c1eb3f7);
+            
+        
+
+        marker_48e03291070d8be6bddfc115ef90c07c.bindPopup(popup_ae5c8b10d48fff1600a7f76f0d7023ed)
+        ;
+
+        
+    
+    
+            var marker_cebea8c405a4b036990922fc28af7dfc = L.marker(
+                [47.6588823, -117.4182458],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_e62dfd3a905ff6dd26b302f1742b486d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2316dc2a8eabd846a9928b099c31ee2f = $(`<div id="html_2316dc2a8eabd846a9928b099c31ee2f" style="width: 100.0%; height: 100.0%;"><strong>The Mango Tree</strong><br>Address: 401 W Main Ave, Spokane, WA 99201<br>Phone: (509) 242-3943<br>Category: Dining<br><a href="http://www.themangotreerestaurants.com/" target="_blank">Website</a></div>`)[0];
+                popup_e62dfd3a905ff6dd26b302f1742b486d.setContent(html_2316dc2a8eabd846a9928b099c31ee2f);
+            
+        
+
+        marker_cebea8c405a4b036990922fc28af7dfc.bindPopup(popup_e62dfd3a905ff6dd26b302f1742b486d)
+        ;
+
+        
+    
+    
+            var marker_84faaf6a1950b46b796420d3b7ee79be = L.marker(
+                [47.6563049, -117.4272065],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_2a2224de6a34f4ac5e2fc341a470930d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cee2c2df6e96ab2ceaa8a90ec06a232 = $(`<div id="html_2cee2c2df6e96ab2ceaa8a90ec06a232" style="width: 100.0%; height: 100.0%;"><strong>First Avenue Coffee</strong><br>Address: 1011 W 1st Ave., Suite A Spokane, WA 99201<br>Phone: (509) 863-9442<br>Category: Dining<br><a href="https://firstavenuecoffee.com/" target="_blank">Website</a></div>`)[0];
+                popup_2a2224de6a34f4ac5e2fc341a470930d.setContent(html_2cee2c2df6e96ab2ceaa8a90ec06a232);
+            
+        
+
+        marker_84faaf6a1950b46b796420d3b7ee79be.bindPopup(popup_2a2224de6a34f4ac5e2fc341a470930d)
+        ;
+
+        
+    
+    
+            var marker_1da7087411cbe58de89d2ad0df8ddb25 = L.marker(
+                [47.6571973, -117.4225788],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_1d5fe1ac812a2dd7fcab2eaa6b63857e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54a10e199384d7fdf2e9963bae943c5b = $(`<div id="html_54a10e199384d7fdf2e9963bae943c5b" style="width: 100.0%; height: 100.0%;"><strong>nYne Bar & Bistro</strong><br>Address: 232 W Sprague Ave Spokane, WA 99201<br>Phone: (509) 280-4103<br>Category: Entertainment<br><a href="https://www.nynebar.com/" target="_blank">Website</a></div>`)[0];
+                popup_1d5fe1ac812a2dd7fcab2eaa6b63857e.setContent(html_54a10e199384d7fdf2e9963bae943c5b);
+            
+        
+
+        marker_1da7087411cbe58de89d2ad0df8ddb25.bindPopup(popup_1d5fe1ac812a2dd7fcab2eaa6b63857e)
+        ;
+
+        
+    
+    
+            var marker_9c0c70c5f6b69faed687a010c0b354ae = L.marker(
+                [47.6572235, -117.4169991],
+                {
+}
+            ).addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+        var popup_9dbab6908d7d66e2d705e2579bcaba21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a15ed9f560c5053ca984c19b980a433a = $(`<div id="html_a15ed9f560c5053ca984c19b980a433a" style="width: 100.0%; height: 100.0%;"><strong>The Q Lounge</strong><br>Address: 228 W. Sprague Spokane, WA 99201<br>Phone: (509) 934-1999<br>Category: Entertainment<br><a href="https://www.facebook.com/profile.php?id=61559836496699" target="_blank">Website</a></div>`)[0];
+                popup_9dbab6908d7d66e2d705e2579bcaba21.setContent(html_a15ed9f560c5053ca984c19b980a433a);
+            
+        
+
+        marker_9c0c70c5f6b69faed687a010c0b354ae.bindPopup(popup_9dbab6908d7d66e2d705e2579bcaba21)
+        ;
+
+        
+    
+    
+            tile_layer_3e4d4d11aebc2446d71e1d178fa1559e.addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+    
+            tile_layer_3e4d4d11aebc2446d71e1d178fa1559e.addTo(map_73786f3c57ef2e9be203cfc753c1dc37);
+        
+</script>
+</html>
